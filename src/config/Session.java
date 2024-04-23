@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package config;
 
-/**
- *
- * @author Alfred
- */
 public class Session {
     private static Session instance;
     private int Uid;
@@ -20,7 +12,7 @@ public class Session {
     private  String status;
     
     private Session(){
-    //private constraction prevents istance
+    
     
     }
 
