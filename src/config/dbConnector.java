@@ -5,6 +5,7 @@
  */
 package config;
 
+
 import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -18,12 +19,10 @@ import javax.swing.JOptionPane;
  * @author Alfred
  */
 public class dbConnector {
-    
      private Connection connect;
-    
      public dbConnector(){
             try{
-                connect = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/pacureapp", "root", "");
+                connect = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/loginsystem", "root", "");
             }catch(SQLException ex){
                     System.out.println("Can't connect to database: "+ex.getMessage());
             }
@@ -50,7 +49,7 @@ public class dbConnector {
         }
         
          //Function to update data
-        public void updateData(String sql){
+          public void updateData(String sql){
             try{
                 PreparedStatement pst = connect.prepareStatement(sql);
                     int rowsUpdated = pst.executeUpdate();
