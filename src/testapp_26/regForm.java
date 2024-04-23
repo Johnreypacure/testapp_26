@@ -109,9 +109,9 @@ public class regForm extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 788, 0);
+        jPanel1.setBounds(0, 0, 788, 58);
 
-        jPanel2.setBackground(new java.awt.Color(153, 51, 255));
+        jPanel2.setBackground(new java.awt.Color(51, 255, 255));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -127,7 +127,7 @@ public class regForm extends javax.swing.JFrame {
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 50, 280, 470);
 
-        jPanel3.setBackground(new java.awt.Color(204, 0, 204));
+        jPanel3.setBackground(new java.awt.Color(0, 255, 102));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("First Name :");

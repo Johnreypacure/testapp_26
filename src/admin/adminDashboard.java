@@ -61,7 +61,7 @@ public class adminDashboard extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("ADMIN DASHBOARD");
 
-        jTextField1.setBackground(new java.awt.Color(102, 0, 255));
+        jTextField1.setBackground(new java.awt.Color(240, 240, 240));
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField1.setText("LOGOUT");
         jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -94,7 +94,7 @@ public class adminDashboard extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 800, 60);
 
-        jPanel2.setBackground(new java.awt.Color(153, 51, 255));
+        jPanel2.setBackground(new java.awt.Color(51, 255, 255));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-admin-96.png"))); // NOI18N
 
@@ -136,7 +136,7 @@ public class adminDashboard extends javax.swing.JFrame {
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 50, 260, 430);
 
-        jPanel3.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 102));
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel3MouseClicked(evt);
@@ -185,7 +185,7 @@ public class adminDashboard extends javax.swing.JFrame {
         );
 
         jPanel3.add(jPanel4);
-        jPanel4.setBounds(330, 130, 0, 120);
+        jPanel4.setBounds(330, 130, 123, 120);
 
         getContentPane().add(jPanel3);
         jPanel3.setBounds(260, 50, 540, 430);

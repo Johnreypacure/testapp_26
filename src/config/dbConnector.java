@@ -22,7 +22,7 @@ public class dbConnector {
      private Connection connect;
      public dbConnector(){
             try{
-                connect = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/loginsystem", "root", "");
+                connect = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/pacuredb", "root", "");
             }catch(SQLException ex){
                     System.out.println("Can't connect to database: "+ex.getMessage());
             }

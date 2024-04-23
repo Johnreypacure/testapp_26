@@ -93,7 +93,7 @@ public class loginform extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(153, 51, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 0, 0));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("LOGIN FORM");
@@ -118,7 +118,7 @@ public class loginform extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 210, 480);
 
-        jPanel2.setBackground(new java.awt.Color(204, 0, 204));
+        jPanel2.setBackground(new java.awt.Color(0, 255, 51));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("User Name :");
@@ -137,7 +137,7 @@ public class loginform extends javax.swing.JFrame {
             }
         });
 
-        jTextField1.setBackground(new java.awt.Color(102, 102, 255));
+        jTextField1.setBackground(new java.awt.Color(0, 0, 204));
         jTextField1.setFont(new java.awt.Font("Arial", 3, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("Registered?Click here to login");
@@ -213,12 +213,12 @@ public class loginform extends javax.swing.JFrame {
        
       
         if(loginAcc(un.getText(),ps.getText())){
-        if(!status.equals("active")){
+        if(!status.equals("Active")){
             
             JOptionPane.showMessageDialog(null,"In-Active Account Contact to admin!"); 
         }else{
             
-            if(type.equals("admin")){
+            if(type.equals("Admin")){
                 JOptionPane.showMessageDialog(null,"LOGIN SUCCESSFULLY!");
             adminDashboard ads = new adminDashboard();
             ads.setVisible(true);
