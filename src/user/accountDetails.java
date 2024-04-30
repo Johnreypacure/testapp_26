@@ -21,8 +21,8 @@ public class accountDetails extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         acc_name1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         iddisplay = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         acc_fn = new javax.swing.JLabel();
@@ -56,8 +56,12 @@ public class accountDetails extends javax.swing.JFrame {
         jPanel1.add(acc_name1);
         acc_name1.setBounds(120, 20, 200, 27);
 
+        iddisplay.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        iddisplay.setText("(UID)");
+        jPanel1.add(iddisplay);
+        iddisplay.setBounds(490, 30, 170, 20);
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("BACK");
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -65,12 +69,7 @@ public class accountDetails extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(630, 40, 60, 20);
-
-        iddisplay.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        iddisplay.setText("(UID)");
-        jPanel1.add(iddisplay);
-        iddisplay.setBounds(540, 20, 210, 20);
+        jLabel1.setBounds(680, 30, 60, 30);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 153));
 
@@ -235,12 +234,6 @@ public class accountDetails extends javax.swing.JFrame {
         
     }//GEN-LAST:event_formWindowActivated
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-     loginform lf = new loginform();
-        lf.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jLabel1MouseClicked
-
     private void utActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_utActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_utActionPerformed
@@ -250,6 +243,10 @@ public class accountDetails extends javax.swing.JFrame {
        cp.setVisible(true);
        this.dispose();
     }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments
